@@ -56,45 +56,45 @@
 
         <div class="menu grid grid-cols-3 gap-2.5 px-4 pb-5 ">
             <div id="add" onclick="showOnly('addMoney'); changeColor('add')"
-                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl ">
+                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl hover:shadow-lg">
                 <img src="./assets/opt-1.png" alt="">
                 <p class="opacity-70 mt-2 text-[14px]">Add Money</p>
             </div>
 
             <div id="cash" onclick="showOnly('cashOut'); changeColor('cash')"
-                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl ">
+                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl hover:shadow-lg">
                 <img src="./assets/opt-2.png" alt="">
                 <p class="opacity-70 mt-2 text-[14px]">Cashout</p>
             </div>
 
             <div id="transfer" onclick="showOnly('transferMoney'); changeColor('transfer')"
-                class="flex flex-col items-center border-2 py-7 border-base-300 rounded-2xl ">
+                class="flex flex-col items-center border-2 py-7 border-base-300 rounded-2xl hover:shadow-lg">
                 <img src="./assets/opt-3.png" alt="">
                 <p class="opacity-70 mt-2 text-[14px]">Transfer Money</p>
             </div>
 
             <div id="get" onclick="showOnly('getBonus'); changeColor('get')"
-                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl ">
+                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl hover:shadow-lg">
                 <img src="./assets/opt-4.png" alt="">
                 <p class="opacity-70 mt-2 text-[14px]">Get Bonus</p>
             </div>
 
             <div id="pay" onclick="showOnly('payBill'); changeColor('pay')"
-                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl ">
+                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl hover:shadow-lg">
                 <img src="./assets/opt-5.png" alt="">
                 <p class="opacity-70 mt-2 text-[14px]">Pay Bill</p>
             </div>
 
             <div id="Transaction" onclick="showOnly('transaction'); changeColor('Transaction')"
-                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl ">
+                class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl hover:shadow-lg">
                 <img src="./assets/opt-6.png" alt="">
                 <p class="opacity-70 mt-2 text-[14px]">Transactions</p>
             </div>
         </div>
     </div>
 
-<section>
-    <section id="addMoney" class="hidden px-6">
+<section id="details">
+    <section id="addMoney" class="card hidden px-6">
         <h1 class="font-bold text-[#080808]/80 text-xl my-4">Add Money</h1>
         <div class="w-full bg-white rounded-2xl">
             <div class="card-body">
@@ -131,7 +131,7 @@
         </div>
     </section>
 
-    <section id="cashOut" class="hidden px-6">
+    <section id="cashOut" class="card hidden px-6">
         <h1 class="font-bold text-[#080808]/80 text-xl my-4">Cashout</h1>
         <div class="w-full bg-white rounded-2xl">
             <div class="card-body">
@@ -159,7 +159,7 @@
         </div>
     </section>
 
-    <section id="transferMoney" class="hidden px-6">
+    <section id="transferMoney" class="card hidden px-6">
         <h1 class="font-bold text-[#080808]/80 text-xl my-4">Transfer Money</h1>
         <div class="w-full bg-white rounded-2xl">
             <div class="card-body">
@@ -187,7 +187,7 @@
         </div>
     </section>
 
-    <section id="getBonus" class="hidden px-6">
+    <section id="getBonus" class="card hidden px-6">
         <h1 class="font-bold text-[#080808]/80 text-xl my-4">Get bonus</h1>
         <div class="w-full bg-white rounded-2xl">
             <div class="card-body">
@@ -206,7 +206,7 @@
         </div>
     </section>
 
-    <section id="payBill" class="hidden px-6">
+    <section id="payBill" class="card hidden px-6">
         <h1 class="font-bold text-[#080808]/80 text-xl my-4">Pay Bill</h1>
         <div class="w-full bg-white rounded-2xl">
             <div class="card-body">
@@ -242,88 +242,32 @@
         </div>
     </section>
 
-    <section class="hidden latestPayment my-8 mx-6 mb-13">
+    <section id="transaction" class="px-6 mt-4 ">
 
-        <div class=" mb-4 flex justify-between items-center">
-            <h1 class="font-bold text-black text-xl">Transaction History</h1>
-            <p id="viewall" class="btn border-0 bg-transparent shadow-[0] opacity-45 cursor-pointer">View All</p>
-        </div>
-
-        <div class="flex flex-col">
-
-            <section class="flex gap-2.5 bg-white border-0 rounded-2xl p-3 mb-3">
-                <div class=" rounded-full p-3 bg-base-200"><img src="./assets/opt-1.png"></div>
-                <div class="flex items-center gap-49">
-                    <div class="font-semibold text-[#080808]/70">
-                        <h>Electricity Bill</h1>
-                            <p class="text-[12px]">Today 01:44 AM</p>
-                    </div>
-                    <i class="fa-solid fa-ellipsis-vertical text-[20px]"></i>
-                </div>
-            </section>
-
-            <div id="update" class="hidden flex flex-col space-y-3">
-
-                <section class="flex gap-2.5 bg-white border-0 rounded-2xl p-3 mb-3">
-                    <div class=" rounded-full p-3 bg-base-200"><img src="./assets/opt-1.png"></div>
-                    <div class="flex items-center gap-49">
-                        <div class="font-semibold text-[#080808]/70">
-                            <h1>Bank Deposit</h1>
-                            <p class="text-[12px]">Today 01:44 AM</p>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical text-[20px]"></i>
-                    </div>
-                </section>
-
-                <section class="flex gap-2.5 bg-white border-0 rounded-2xl p-3 mb-3">
-                    <div class=" rounded-full p-3 bg-base-200"><img src="./assets/opt-1.png"></div>
-                    <div class="flex items-center gap-43">
-                        <div class="font-semibold text-[#080808]/70">
-                            <h1>Mobile Recharge</h1>
-                            <p class="text-[12px]">Today 01:44 AM</p>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical text-[20px]"></i>
-                    </div>
-                </section>
-
-                <section class="flex gap-2.5 bg-white border-0 rounded-2xl p-3">
-                    <div class=" rounded-full p-3 bg-base-200"><img src="./assets/opt-1.png"></div>
-                    <div class="flex items-center gap-52">
-                        <div class="font-semibold text-[#080808]/70">
-                            <h1>Gas Bill</h1>
-                            <p class="text-[12px]">Today 01:44 AM</p>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical text-[20px]"></i>
-                    </div>
-                </section>
-
-            </div>
-        </div>
-
-    </section>
-
-    <section id="transaction" class="hidden px-5 mt-4 ">
-
-        <div class=" flex justify-between items-center">
-            <h1 class="font-bold text-black text-xl">Transaction History</h1>
+        <h1 class="font-bold text-black text-xl mb-4">Transaction History</h1>
             <!-- <p id="viewall" class="btn border-0 bg-transparent shadow-[0] opacity-45 cursor-pointer">View All</p> -->
+
+        <div id="transactionText">
+              <h3 class="text-center p-5 bg-amber-300 rounded-xl">No transaction</h3>
         </div>
 
         <div id="historybox" class="border-0 rounded-2xl p-3 mb-3">
-                
+               
             </div>
 
     </section>
 </section>
 
+
+
     <script>
-        const addMoney=document.getElementById("add");
-      
+        document.getElementById("logout").addEventListener("click", function(){
+            window.location.assign("./index.html");
+        })
     </script>
 
-    <script src="./js/LatestPayment.js"></script>
-    <script src="./js/index.js"></script>
     <script src="./js/machine.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/cashout.js"></script>
     <script src="./js/addMoney.js"></script>
     <script src="./js/transferMoney.js"></script>

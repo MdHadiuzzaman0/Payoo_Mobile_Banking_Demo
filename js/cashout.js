@@ -12,7 +12,7 @@
                 alert(`Cashout Successful 
                     ${cashoutamount} Taka
                     from ${agentNumber} 
-                    at ${new Date}`);
+                    at ${new Date().toLocaleDateString()}`);
                 setBalance(newbalance)
             }
              else{
@@ -29,8 +29,24 @@
                     
                 }
             }
-        })
         
+  const transaction=document.getElementById('historybox');
+  const transactionText=document.getElementById("transactionText");
+  transactionText.innerHTML="";
+  const element=document.createElement('div');
+  element.innerHTML=`
+  <div class=" bg-white border-0 rounded-2xl p-3 mb-4">
+  <div class="flex items-center gap-3">
+    <img src="./assets/opt-1.png" alt="">
+    <p>Cash Out</p>
+  </div>
+  Successful <br> 
+  Taka: <b>${cashoutamount}</b> <br>
+  Account: <b> ${agentNumber} </b> <br>
+  Time: ${new Date().toLocaleString()}</div>`;
+  transaction.append(element);
+
+})
 
 // document.getElementById('withdraw').addEventListener('click', function () {
 //             const agentNumber = document.getElementById('agentnumber').value;

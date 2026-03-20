@@ -15,7 +15,7 @@ document.getElementById("paynowbtn").addEventListener("click", function () {
                 alert(`Pay Successful 
                     ${paybillAmount} Taka
                     from ${paybillAccountNum} 
-                    at ${new Date()}`);
+                    at ${new Date().toLocaleDateString()}`);
                 setBalance(NEWBalance);
             } else {
                 if (paybillAccountNum.length !== 11 || isNaN(paybillAccountNum) === true) {
@@ -28,4 +28,23 @@ document.getElementById("paynowbtn").addEventListener("click", function () {
                     alert("Wrong Pin");
                 }
             }
-        })
+
+const transaction=document.getElementById('historybox');
+const transactionText=document.getElementById("transactionText");
+  transactionText.innerHTML="";
+  const element=document.createElement('div');
+  element.innerHTML=`
+  <div class=" bg-white border-0 rounded-2xl p-3 mb-4">
+  <div class="flex items-center gap-3">
+    <img src="./assets/opt-5.png" alt="">
+    <p>Pay Bill</p>
+  </div>
+  Successful <br> 
+  Taka: <b>${paybillAmount}</b> <br>
+  Account: <b> ${paybillAccountNum} </b> <br>
+  Time: ${new Date().toLocaleString()}</div>`;
+  transaction.append(element);
+
+});
+
+       
