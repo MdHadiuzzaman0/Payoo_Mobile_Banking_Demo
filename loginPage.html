@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero bg-base-200 min-h-screen ">
+  <div class="hero-content flex-col ">
+    <div class="text-center lg:text-left">
+       <img src="./assets/Logo-full.png" alt="" class="mb-4">
+    </div>
+    <div class="bg-base-100 w-[400px] rounded-3xl shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+
+          <label class="label font-bold text-black">Mobile Number</label>
+          <input id="login-mobile" maxlength="11" pattern="01[0-9]{11}"  type="tel" class="input w-full rounded-full bg-base-300 mb-4 border-0" placeholder="Enter your number" />
+
+          <label class="label font-bold text-black">4 Digit Pin</label>
+          <input id="login-pin" type="password" maxlength="4" class="input w-full rounded-full bg-base-300 border-0" placeholder="Enter 4 Digit Pin" />
+
+          <button id="loginbtn" class="btn btn-neutral mt-4 bg-blue-800 border-0 rounded-full">Login</button>
+
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+   
+</script>
+<script src="./js/index.js"></script>
+</body>
+
+</html>
