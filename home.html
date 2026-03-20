@@ -11,6 +11,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +26,12 @@
             font-family: "Outfit", sans-serif;
         }
     </style>
-    <title>Document</title>
+    <title>Payoo</title>
 </head>
 
-<body class="max-w-[450px] mx-auto">
-    <div class="bg-white rounded-b-2xl">
-
-        <div class="navbar sticky top-0 bg-white z-10">
+<body class="max-w-[450px] mx-auto mt-3">
+    <div class="bg-white rounded-2xl shadow-xl">
+        <div class="navbar sticky top-0 z-10">
             <div class="ps-4 flex gap-2.5">
                 <img src="./assets/logo.png" alt="" class="w-[60px]">
                 <div>
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <hr class="opacity-10 mt-2">
+        <hr class="opacity-10">
 
         <div class="welcome w-[402px] mx-auto mt-4 mb-6">
             <h1 class="font-bold text-black text-2xl">Welcome to Pay<span class="text-[#7460FF]">oo</span></h1>
@@ -85,11 +85,11 @@
                 <p class="opacity-70 mt-2 text-[14px]">Pay Bill</p>
             </div>
 
-            <div id="Transaction" onclick="showOnly('transaction'); changeColor('Transaction')"
+            <!-- <div id="Transaction" onclick="showOnly('transaction'); changeColor('Transaction')"
                 class="flex flex-col items-center border-2 p-7 border-base-300 rounded-2xl hover:shadow-lg">
                 <img src="./assets/opt-6.png" alt="">
                 <p class="opacity-70 mt-2 text-[14px]">Transactions</p>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -257,7 +257,6 @@
 
     </section>
 </section>
-
 
 
     <script>
