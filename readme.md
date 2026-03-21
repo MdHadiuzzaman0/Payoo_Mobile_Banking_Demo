@@ -1,11 +1,33 @@
-<img src="./assets/Logo-full.png" width="200"  style="background:white;padding:10px;"/>
+<p align="center">
+<img width="800" height="500" alt="Monday 29 september 2025" src="https://github.com/user-attachments/assets/bb23d887-1faf-4597-85db-67892d685ea0" />
+</p>
 
-# PAYOO - Smart MFS Interface 
 
-## Overview
-PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seamless digital banking experience. Built with HTML, CSS, DaisyUI, and Vanilla JavaScript, it offers a user-friendly platform for managing money transfers and financial transactions. The application supports key banking operations including adding money, cashouts, bonus rewards, and comprehensive transaction history tracking.
+<h1 align="center">
+ 💰 PAYOO - Smart MFS Interface 
+</h1>
 
-## Features 
+
+## 📖 Overview
+PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seamless digital banking experience. Built with **HTML, CSS, DaisyUI and Vanilla JavaScript**, it offers a user-friendly platform for managing money transfers and financial transactions. The application supports key banking operations including adding money, cashouts, bonus rewards, and comprehensive transaction history tracking.
+<hr></hr>
+
+## 🔗 Live Link
+👉 https://mdhadiuzzaman0.github.io/Payoo_Mobile_Banking_App/
+<hr></hr>
+
+
+## 🛠️ Technologies Used
+- **Vanilla JavaScript(ES6+)**
+- **HTML5**
+- **CSS3**
+- **Tailwind CSS**
+- **DaisyUI**
+- Responsive Web Design Principles
+- DOM Manipulation & Event Handling
+<hr></hr>
+
+## ✨ Features 
 - **Simple Login Interface** - Secure authentication with username and password
 - **Home Dashboard** - View account balance and quick access to all services
 - **Add Money** - Deposit funds into your PAYOO account
@@ -15,8 +37,33 @@ PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seaml
 - **Transaction History** - Complete record of all financial activities
 - **PIN Security System** - Every transaction requires PIN authentication for enhanced security
 - **User-Friendly Interface** - Responsive design built with DaisyUI for optimal experience across devices
+<hr></hr>
 
-## UI 
+## ⚙️ Core Implementation Concepts
+- Modular Scripting Architecture
+- Dynamic State Management
+- User Authentication & Access Control
+- Interactive UI Component Handling
+- Transaction Logging System
+- Input Validation & Error Handling
+<hr></hr>
+
+## 🎯 Project Purpose
+- Build a functional mobile banking interface mimicking digital wallets.
+- Master code structuring by using independent, reusable JavaScript modules.
+- Implement real-time updates for account balances and UI elements.
+- Create a responsive, interactive dashboard with Tailwind and DaisyUI.
+- Develop a complete system for input validation and automated logging.
+<hr></hr>
+
+## 👤 Author
+**Md. Hadiuzzaman**
+
+Textile Engineering Graduate | KUET | Focused on front-end architectures and building smart, responsive user applications.
+<hr></hr>
+
+
+## 🎨 UI 
 <table>
     <tr>
         <td>
@@ -53,26 +100,4 @@ PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seaml
     
 </table>
 
-## How to use
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/ProgrammingHero1/payoo-resources.git
-```
-
-### 2. Install Dependencies
-
-Copy the project assets and set up required CDNs:
-
-- **Tailwind CSS** - Add to `<head>`:
-
-
-- **DaisyUI** - Add after Tailwind:
-
-
-- **Font Awesome** - Add Font Awesome icons:
-
-
-### 3. Start Building the Application
-
+## 
