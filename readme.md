@@ -1,4 +1,7 @@
-<img src="./assets/Logo-full.png" width="200"  style="background:white;padding:10px;"/>
+<p align="center">
+<img width="900" height="600" alt="Monday 29 september 2025" src="https://github.com/user-attachments/assets/bb23d887-1faf-4597-85db-67892d685ea0" />
+</p>
+
 
 # PAYOO - Smart MFS Interface 
 
